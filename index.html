@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>products</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">logo</h1>
+        <div class="head_form">
+          <input type="text" placeholder="Search..." class="head__search" />
+          <button class="head_btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="head_bottom">
+      <div class="container">
+        <button class="button_filter">basket</button>
+        <select id="category">
+          <option value="all" class="option">all</option>
+        </select>
+      </div>
+    </div>
+
+    <main class="main container">
+      <ul class="list"></ul>
+    </main>
+
+    <div class="pagination">
+      <button id="prevPage">< page</button>
+      <div class="showCount">
+        <p id="countPage">1</p>
+        |
+        <p>4</p>
+      </div>
+      <button id="nextPage">page ></button>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

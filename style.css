@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.header {
+  padding: 10px 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  font-weight: 800;
+  margin-right: 20px;
+}
+
+.head_form {
+  border: solid 1px #319dff;
+  border-radius: 19px;
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.head_form input {
+  outline: none;
+  border: none;
+}
+
+.head_btn {
+  border: solid 12px #319dff;
+  border-radius: 0px 17.108px 17.108px 0px;
+  background: #319dff;
+}
+
+.head_btn i {
+  color: white;
+  font-weight: 800;
+}
+
+.main {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.list {
+  grid-template-columns: auto auto auto auto;
+  display: grid;
+  padding-left: 40px;
+}
+
+.item {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5.132px;
+  border: 2px solid #eef0f4;
+  margin-top: 30px;
+  background: #fff;
+  padding: 17.11px;
+  position: relative;
+  list-style-type: none;
+}
+
+.item__img {
+  text-align: center;
+  margin: 0 auto;
+  width: 171.079px;
+  height: 171.079px;
+}
+
+.item__categories {
+  color: #586a84;
+  font-size: 14px;
+  margin-bottom: 17px;
+}
+
+.item__title {
+  color: #0077e4;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+.item:hover {
+  border: 2px solid #3b79f6;
+  transition: 0.2s;
+}
+
+#category {
+  width: 30%;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.button_filter {
+  background-color: #0077e4;
+  color: white;
+  border: solid 1px #0077e4;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.head_bottom .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.item_foot {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item_foot .basket_btn {
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.basket_btn img {
+  width: 15.163px;
+  height: 15.405px;
+}
+
+.basket_btn:hover {
+  border: #0077e4 solid 1px;
+}
+
+.delete_btn {
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  padding: 2px 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.delete_btn:active {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 1080px) {
+  .list {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .list {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .list {
+    grid-template-columns: auto;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+
+.vegetables {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 0 auto;
+  animation: animate 1s ease;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.page {
+  list-style: none;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  background: #fff;
+  border-radius: 1rem;
+  line-height: 1.8rem;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.showCount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  width: 85px;
+  background: white;
+  border-radius: 0.8rem;
+}
+.showCount p {
+  width: auto;
+}
+
+.pagination button {
+  padding: 1rem 1.4rem;
+  background-color: #fff;
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  background: #fff;
+  border-radius: 1rem;
+  font-family: poppins;
+  transition: 0.3s;
+}
+
+.pagination button:hover {
+  transform: scale(1.02) translateY(-5px);
+  box-shadow: 0 10px #000;
+}
+.pagination button:active {
+  transform: scale(1) translateY(0);
+  box-shadow: none;
+  transition: 0s;
+}
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: scale(1);
+}
+.pagination button:disabled:hover {
+  box-shadow: none;
+}
